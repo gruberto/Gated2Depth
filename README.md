@@ -1,5 +1,8 @@
 Gated2Depth
 ============================
+
+<img src="./doc/teaser_day.jpg" width="600">
+
 This repository contains the code and data for [Gated2Depth: Real-Time Dense Lidar From Gated Images](https://arxiv.org/pdf/1902.04997.pdf) by [Tobias Gruber](https://scholar.google.de/citations?user=w-VeQ5cAAAAJ&hl=de), [Frank Julca-Aguilar](https://scholar.google.com/citations?user=jepjJjcAAAAJ&hl=en), [Mario Bijelic](http://mariobijelic.de/wordpress/) and [Felix Heide](http://www.cs.princeton.edu/~fheide/).
 [Werner Ritter](https://www.xing.com/profile/Werner_Ritter7) supervised this project at Daimler AG, and [Klaus Dietmayer](https://www.uni-ulm.de/en/in/institute-of-measurement-control-and-microtechnology/institute/staff/institutional-administration/prof-dr-ing-klaus-dietmayer/)  supervised the project portion at Ulm University.
 
