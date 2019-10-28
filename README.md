@@ -13,16 +13,18 @@ We present an imaging framework which converts three images from a gated camera 
 The poster can be found [here](https://drive.google.com/file/d/1F-VjHBWjUVdq6WGcOJ9Fs5CIWwzxMEww/view?usp=sharing).
 
 ### Gated Simulation
-[![Gated Simulation Video](/doc/gta_simulation.png)]({https://drive.google.com/file/d/18vP4ss-CLfOR8YFMEFvTeBwL351zlxvD/view?usp=sharing} "Gated Simulation Video")
+[![Gated Simulation Video](/doc/gta_simulation.png)](https://drive.google.com/file/d/18vP4ss-CLfOR8YFMEFvTeBwL351zlxvD/view?usp=sharing "Gated Simulation Video")
 
 ### Results
 Daytime Results
 
-[<img src="./doc/video_day.png" width="400">]({https://drive.google.com/file/d/1Aa1uoGnPSlrtMYokZJGOe9qaI_QnC8vB/view?usp=sharing} "Daytime Results")
+[<img src="./doc/video_day.png" width="400">](https://drive.google.com/file/d/1Aa1uoGnPSlrtMYokZJGOe9qaI_QnC8vB/view?usp=sharing "Daytime Results")
+
+<a href="{video-url}" title="Link Title"><img src="{image-url}" alt="Alternate Text" /></a>
 
 Nighttime Results
 
-[<img src="./doc/video_night.png" width="400">]({https://drive.google.com/file/d/1E7mc_QA3VGAH5fZ0dI9VZREifqBNKvg6/view?usp=sharing} "Nighttime Results")
+[<img src="./doc/video_night.png" width="400">](https://drive.google.com/file/d/1E7mc_QA3VGAH5fZ0dI9VZREifqBNKvg6/view?usp=sharing "Nighttime Results")
 
 
 ## Reference
