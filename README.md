@@ -17,10 +17,13 @@ The poster can be found [here](https://drive.google.com/file/d/1F-VjHBWjUVdq6WGc
 
 ### Results
 Daytime Results
-[![Daytime Results](/doc/video_day.png)]({https://drive.google.com/file/d/1Aa1uoGnPSlrtMYokZJGOe9qaI_QnC8vB/view?usp=sharing} "Daytime Results")
+
+[<img src="./doc/video_day.png" width="400">]({https://drive.google.com/file/d/1Aa1uoGnPSlrtMYokZJGOe9qaI_QnC8vB/view?usp=sharing} "Daytime Results")
 
 Nighttime Results
-[![Nighttime Results](/doc/video_night.png)]({https://drive.google.com/file/d/1E7mc_QA3VGAH5fZ0dI9VZREifqBNKvg6/view?usp=sharing} "Nighttime Results")
+
+[<img src="./doc/video_night.png" width="400">]({https://drive.google.com/file/d/1E7mc_QA3VGAH5fZ0dI9VZREifqBNKvg6/view?usp=sharing} "Nighttime Results")
+
 
 ## Reference
 If you find our work on gated depth estimation useful in your research, please consider citing our paper:
