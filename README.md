@@ -3,8 +3,7 @@ Gated2Depth
 
 <img src="./doc/teaser_day.jpg" width="800">
 
-This repository contains the code and data for [Gated2Depth: Real-Time Dense Lidar From Gated Images](https://arxiv.org/pdf/1902.04997.pdf) by [Tobias Gruber](https://scholar.google.de/citations?user=w-VeQ5cAAAAJ&hl=de), [Frank Julca-Aguilar](https://scholar.google.com/citations?user=jepjJjcAAAAJ&hl=en), [Mario Bijelic](http://mariobijelic.de/wordpress/) and [Felix Heide](http://www.cs.princeton.edu/~fheide/).
-[Werner Ritter](https://www.xing.com/profile/Werner_Ritter7) supervised this project at Daimler AG, and [Klaus Dietmayer](https://www.uni-ulm.de/en/in/institute-of-measurement-control-and-microtechnology/institute/staff/institutional-administration/prof-dr-ing-klaus-dietmayer/)  supervised the project portion at Ulm University.
+This repository contains the code and data for [Gated2Depth: Real-Time Dense Lidar From Gated Images](https://arxiv.org/pdf/1902.04997.pdf).
 
 Code and data will be available soon.
 
@@ -13,12 +12,15 @@ We present an imaging framework which converts three images from a gated camera 
 
 ## Additional Material
 
-The poster can be found [here](https://drive.google.com/file/d/1F-VjHBWjUVdq6WGcOJ9Fs5CIWwzxMEww/view?usp=sharing).
-
 ### Gated Simulation
+
+How we simulate gated images from GTAV.
 [<img src="./doc/gta_simulation.png" width="500">](https://drive.google.com/file/d/18vP4ss-CLfOR8YFMEFvTeBwL351zlxvD/view?usp=sharing "Gated Simulation Video")
 
 ### Results
+
+We show the three gated images in the top row and the Gated2Depth output in the middle. For reference, projected lidar points are shown at the bottom.
+
 #### Daytime Results
 
 [<img src="./doc/video_day.png" width="500">](https://drive.google.com/file/d/1Aa1uoGnPSlrtMYokZJGOe9qaI_QnC8vB/view?usp=sharing "Daytime Results")
