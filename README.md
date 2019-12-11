@@ -10,6 +10,23 @@ Code and data will be available soon.
 ## Abstract
 We present an imaging framework which converts three images from a gated camera into high-resolution depth maps with depth accuracy comparable to pulsed lidar measurements. Existing scanning lidar systems achieve low spatial resolution at large ranges due to mechanically-limited angular sampling rates, restricting scene understanding tasks to close-range clusters with dense sampling. Moreover, today's pulsed lidar scanners suffer from high cost, power consumption, large form-factors, and they fail in presence of strong backscatter. We depart from point scanning and demonstrate that it is possible to turn a low-cost CMOS gated imager into a dense depth camera with at least 80m range - by learning depth from three gated images. The proposed architecture exploits semantic context across gated slices, and is trained on a synthetic discriminator loss without the need of dense depth labels. The proposed replacement for scanning lidar systems is real-time, handles back-scatter and provides dense depth at long ranges. We validate our approach in simulation and on real-world data acquired over 4.000 km driving in northern Europe.
 
+## Getting Started
+
+Clone the benchmark code.
+'''
+git clone https://github.com/gruberto/Gated2Depth
+'''
+
+Create conda environment.
+'''
+conda env create -f environment.yaml
+'''
+
+Activate conda environment.
+'''
+conda activate gated2depth
+'''
+
 ## Additional Material
 ### Gated Simulation
 
