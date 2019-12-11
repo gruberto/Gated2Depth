@@ -13,19 +13,54 @@ We present an imaging framework which converts three images from a gated camera 
 ## Getting Started
 
 Clone the benchmark code.
-'''
+```
 git clone https://github.com/gruberto/Gated2Depth
-'''
+```
 
 Create conda environment.
-'''
+```
 conda env create -f environment.yaml
-'''
+```
 
 Activate conda environment.
-'''
+```
 conda activate gated2depth
-'''
+```
+
+Download and unzip the benchmark data from <url> (will be available soon) into a folder "data".
+
+After unzipping the files, your directory should look like this:
+```
+.
+|-- data
+    |-- real
+        |-- depth_hdl64_gated_compressed
+        |-- gated0_10bit
+        |-- gated1_10bit
+        |-- gated2_10bit
+        |-- rgb_left_8bit
+        |-- rgb_right_8bit
+        |-- test_day.txt
+        |-- test_night.txt
+        |-- train_day.txt
+        |-- train_night.txt
+        |-- val_day.txt
+        |-- val_night.txt
+    |-- sim
+        |-- depth_compressed
+        |-- gated0_10bit
+        |-- gated1_10bit
+        |-- gated2_10bit
+        |-- rgb_left_8bit
+        |-- rgb_right_8bit
+        |-- test_day.txt
+        |-- test_night.txt
+        |-- train_day.txt
+        |-- train_night.txt
+        |-- val_day.txt
+        |-- val_night.txt
+|-- src
+```
 
 ## Additional Material
 ### Gated Simulation
