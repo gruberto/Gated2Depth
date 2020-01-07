@@ -40,12 +40,6 @@ After unzipping the files, your directory should look like this:
         |-- gated2_10bit
         |-- rgb_left_8bit
         |-- rgb_right_8bit
-        |-- test_day.txt
-        |-- test_night.txt
-        |-- train_day.txt
-        |-- train_night.txt
-        |-- val_day.txt
-        |-- val_night.txt
     |-- sim
         |-- depth_compressed
         |-- gated0_10bit
@@ -53,12 +47,19 @@ After unzipping the files, your directory should look like this:
         |-- gated2_10bit
         |-- rgb_left_8bit
         |-- rgb_right_8bit
-        |-- test_day.txt
-        |-- test_night.txt
-        |-- train_day.txt
-        |-- train_night.txt
-        |-- val_day.txt
-        |-- val_night.txt
+|-- splits
+        |-- real_test_day.txt
+        |-- real_test_night.txt
+	|-- real_train_day.txt
+        |-- real_train_night.txt
+	|-- real_val_day.txt
+        |-- real_val_night.txt
+        |-- syn_test_day.txt
+        |-- syn_test_night.txt
+	|-- syn_train_day.txt
+        |-- syn_train_night.txt
+	|-- syn_val_day.txt
+        |-- syn_val_night.txt
 |-- src
 ```
 
