@@ -15,9 +15,16 @@ We present an imaging framework which converts three images from a gated camera 
 Clone the benchmark code.
 ```
 git clone https://github.com/gruberto/Gated2Depth
+cd Gated2Depth
 ```
 
-Create conda environment.
+For running the evaluation and visualization code you need Python with the following packages:
+- tensorflow
+- numpy
+- cv2
+- matplotlib
+
+We provide a conda environment to run our code.
 ```
 conda env create -f environment.yaml
 ```
@@ -27,7 +34,14 @@ Activate conda environment.
 conda activate gated2depth
 ```
 
-Download and unzip the benchmark data from <url> (will be available soon) into a folder "data".
+Download the Gated2Depth dataset and the models from <url> (will be available soon). Please download the zip files of the synthetic and real dataset, and the models into separate folders.
+
+Check if you have downloaded all files. Then, you can unzip your downloaded files.
+```
+bash scripts/unzip_real.sh <your_real_data_download_folder>
+bash scripts/unzip_syn.sh <your_syn_data_download_folder>
+bash scripts/unzip_models.sh <your_models_download_folder>
+```
 
 After unzipping the files, your directory should look like this:
 ```
@@ -47,7 +61,24 @@ After unzipping the files, your directory should look like this:
         |-- gated2_10bit
         |-- rgb_left_8bit
         |-- rgb_right_8bit
+|-- example
+        |-- depth_hdl64_gated_compressed
+        	|-- example.npz
+        |-- gated0_10bit
+        	|-- example.png
+        |-- gated1_10bit
+        	|-- example.png
+        |-- gated2_10bit
+        	|-- example.png
+        |-- rgb_left_8bit
+        	|-- example.png
+|-- models
+	|-- gated2depth_real_day
+	|-- gated2depth_real_night
+	|-- gated2depth_syn_day
+	|-- gated2depth_syn_night
 |-- splits
+	|-- example.txt
         |-- real_test_day.txt
         |-- real_test_night.txt
 	|-- real_train_day.txt
@@ -63,12 +94,45 @@ After unzipping the files, your directory should look like this:
 |-- src
 ```
 
+## Quick Example
+Infer the depth for a single example:
+```
+./run_example.sh
+```
+
+## Training
+Train a model on synthetic data from scratch with:
+```
+./run_train_syn.sh
+```
+
+Train a model on real data from scratch with:
+```
+./run_train_real.sh
+```
+
+Train a model that has been pretrained on synthetic data (pretrained model weights and fixed discriminator):
+```
+./run_train_real_pretrained.sh
+```
+
+## Evaluation
+Evaluate on synthetic data. If you have not trained the models by yourself, make sure that you have downloaded our models into the "models" folder.
+```
+./run_eval_syn.sh
+```
+
+Evaluate on real data:
+```
+./run_eval_real.sh
+```
+
 ## Additional Material
 ### Gated Simulation
 
 How we simulate gated images from GTAV.
 
-[<img src="./doc/gta_simulation.png" width="500">](https://drive.google.com/file/d/18vP4ss-CLfOR8YFMEFvTeBwL351zlxvD/view?usp=sharing "Gated Simulation Video")
+<img src="./doc/Gated2Depth_simulation.gif" width="500">
 
 ### Results
 
@@ -76,11 +140,11 @@ We show the three gated images in the top row and the Gated2Depth output in the 
 
 #### Daytime Results
 
-[<img src="./doc/video_day.png" width="500">](https://drive.google.com/file/d/1Aa1uoGnPSlrtMYokZJGOe9qaI_QnC8vB/view?usp=sharing "Daytime Results")
+<img src="./doc/Gated2Depth_real_day.gif" width="500">
 
 #### Nighttime Results
 
-[<img src="./doc/video_night.png" width="500">](https://drive.google.com/file/d/1E7mc_QA3VGAH5fZ0dI9VZREifqBNKvg6/view?usp=sharing "Nighttime Results")
+<img src="./doc/Gated2Depth_real_night.gif" width="500">
 
 
 ## Reference
