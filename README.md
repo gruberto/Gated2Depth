@@ -48,7 +48,9 @@ After unzipping the files, your directory should look like this:
 .
 |-- data
     |-- real
+        |-- depth_hdl64
         |-- depth_hdl64_gated_compressed
+        |-- depth_hdl64_rgb_left_compressed
         |-- gated0_10bit
         |-- gated1_10bit
         |-- gated2_10bit
@@ -63,15 +65,15 @@ After unzipping the files, your directory should look like this:
         |-- rgb_right_8bit
 |-- example
         |-- depth_hdl64_gated_compressed
-        	|-- example.npz
+        |-- example.npz
         |-- gated0_10bit
-        	|-- example.png
+        |-- example.png
         |-- gated1_10bit
-        	|-- example.png
+        |-- example.png
         |-- gated2_10bit
-        	|-- example.png
+        |-- example.png
         |-- rgb_left_8bit
-        	|-- example.png
+        |-- example.png
 |-- models
 	|-- gated2depth_real_day
 	|-- gated2depth_real_night
@@ -97,34 +99,36 @@ After unzipping the files, your directory should look like this:
 ## Quick Example
 Infer the depth for a single example:
 ```
-./run_example.sh
+scripts/run_example.sh
 ```
 
 ## Training
 Train a model on synthetic data from scratch with:
 ```
-./run_train_syn.sh
+scripts/run_train_syn.sh
 ```
 
 Train a model on real data from scratch with:
 ```
-./run_train_real.sh
+scripts/run_train_real.sh
 ```
 
 Train a model that has been pretrained on synthetic data (pretrained model weights and fixed discriminator):
 ```
-./run_train_real_pretrained.sh
+scripts/run_train_real_pretrained.sh
 ```
 
 ## Evaluation
 Evaluate on synthetic data. If you have not trained the models by yourself, make sure that you have downloaded our models into the "models" folder.
 ```
-./run_eval_syn.sh
+scripts/run_eval_syn_night.sh
+scripts/run_eval_syn_day.sh
 ```
 
 Evaluate on real data:
 ```
-./run_eval_real.sh
+scripts/run_eval_real_night.sh
+scripts/run_eval_real_day.sh
 ```
 
 ## Additional Material
