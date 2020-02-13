@@ -5,7 +5,7 @@ Gated2Depth
 
 This repository contains the code and data for [Gated2Depth: Real-Time Dense Lidar From Gated Images](https://arxiv.org/pdf/1902.04997.pdf).
 
-Code and data will be available soon.
+NEWS: Coda and data are available now!
 
 ## Abstract
 We present an imaging framework which converts three images from a gated camera into high-resolution depth maps with depth accuracy comparable to pulsed lidar measurements. Existing scanning lidar systems achieve low spatial resolution at large ranges due to mechanically-limited angular sampling rates, restricting scene understanding tasks to close-range clusters with dense sampling. Moreover, today's pulsed lidar scanners suffer from high cost, power consumption, large form-factors, and they fail in presence of strong backscatter. We depart from point scanning and demonstrate that it is possible to turn a low-cost CMOS gated imager into a dense depth camera with at least 80m range - by learning depth from three gated images. The proposed architecture exploits semantic context across gated slices, and is trained on a synthetic discriminator loss without the need of dense depth labels. The proposed replacement for scanning lidar systems is real-time, handles back-scatter and provides dense depth at long ranges. We validate our approach in simulation and on real-world data acquired over 4.000 km driving in northern Europe.
@@ -48,9 +48,7 @@ After unzipping the files, your directory should look like this:
 .
 |-- data
     |-- real
-        |-- depth_hdl64
         |-- depth_hdl64_gated_compressed
-        |-- depth_hdl64_rgb_left_compressed
         |-- gated0_10bit
         |-- gated1_10bit
         |-- gated2_10bit
@@ -65,15 +63,15 @@ After unzipping the files, your directory should look like this:
         |-- rgb_right_8bit
 |-- example
         |-- depth_hdl64_gated_compressed
-        |-- example.npz
+        	|-- example.npz
         |-- gated0_10bit
-        |-- example.png
+        	|-- example.png
         |-- gated1_10bit
-        |-- example.png
+        	|-- example.png
         |-- gated2_10bit
-        |-- example.png
+        	|-- example.png
         |-- rgb_left_8bit
-        |-- example.png
+        	|-- example.png
 |-- models
 	|-- gated2depth_real_day
 	|-- gated2depth_real_night
@@ -99,36 +97,34 @@ After unzipping the files, your directory should look like this:
 ## Quick Example
 Infer the depth for a single example:
 ```
-scripts/run_example.sh
+./run_example.sh
 ```
 
 ## Training
 Train a model on synthetic data from scratch with:
 ```
-scripts/run_train_syn.sh
+./run_train_syn.sh
 ```
 
 Train a model on real data from scratch with:
 ```
-scripts/run_train_real.sh
+./run_train_real.sh
 ```
 
 Train a model that has been pretrained on synthetic data (pretrained model weights and fixed discriminator):
 ```
-scripts/run_train_real_pretrained.sh
+./run_train_real_pretrained.sh
 ```
 
 ## Evaluation
 Evaluate on synthetic data. If you have not trained the models by yourself, make sure that you have downloaded our models into the "models" folder.
 ```
-scripts/run_eval_syn_night.sh
-scripts/run_eval_syn_day.sh
+./run_eval_syn.sh
 ```
 
 Evaluate on real data:
 ```
-scripts/run_eval_real_night.sh
-scripts/run_eval_real_day.sh
+./run_eval_real.sh
 ```
 
 ## Additional Material
