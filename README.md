@@ -34,7 +34,7 @@ Activate conda environment.
 conda activate gated2depth
 ```
 
-Download the Gated2Depth dataset and the models from <url> (will be available soon). Please download the zip files of the synthetic and real dataset, and the models into separate folders.
+Download the Gated2Depth dataset and the models from the [DENSE dataset webpage](https://www.uni-ulm.de/en/in/driveu/projects/dense-datasets). Please download the zip files of the synthetic and real dataset, and the models into separate folders.
 
 Check if you have downloaded all files. Then, you can unzip your downloaded files.
 ```
